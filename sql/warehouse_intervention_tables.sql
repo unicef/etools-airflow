@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS intervention;
 
-CREATE TABLE intervention (
+CREATE TABLE IF NOT EXISTS intervention (
        "schema_name" VARCHAR(50) NOT NULL,
        intervention_id INTEGER NOT NULL,
        created TIMESTAMP WITH TIME ZONE,
@@ -27,7 +27,7 @@ CREATE TABLE intervention (
        metadata JSONB,
        unicef_signatory_first_name VARCHAR(30),
        unicef_signatory_last_name VARCHAR(30),
-       unicef_signatory_email  VARCHAR(254),
+       unicef_signatory_email VARCHAR(254),
        partner_signatory_title VARCHAR(64),
        partner_signatory_first_name VARCHAR(64),
        partner_signatory_last_name VARCHAR(64),
