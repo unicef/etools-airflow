@@ -2,7 +2,6 @@
 Prototype: Denomalize partners_agreement table into warehouse
 """
 import datetime
-import json
 
 from airflow import DAG
 from airflow.hooks.postgres_hook import PostgresHook
